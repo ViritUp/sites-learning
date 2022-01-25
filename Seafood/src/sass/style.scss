@@ -1,0 +1,85 @@
+@import 'libs/normalize';
+@import 'libs/slick';
+
+html{
+    box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+body{
+    color: #232222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu__btn{
+    display: none;
+    width: 40px;
+    border: none;
+    padding: 10px 0;
+    background-color: transparent;
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    margin-top: 10px;
+    z-index: 10;
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background-color: #001E64;
+    }
+    &::after{
+        bottom: 0;
+    }
+    &::before{
+        top: 0;
+    }
+    span{
+        display: block;
+        height: 4px;
+        background-color: #001E64;
+    }
+}
+
+@import 'header';
+@import 'product';
+@import 'seafood';
+@import 'info';
+@import 'contacts';
+@import 'footer';
+@import 'media';

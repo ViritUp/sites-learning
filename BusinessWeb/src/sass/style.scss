@@ -1,0 +1,41 @@
+
+@import 'libs/reset';
+@import 'libs/slick';
+@import 'libs/animate';
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+button{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(39, 39, 39, .7);
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import 'header';
+@import 'specialised';
+@import 'advantages';
+@import 'testimonial';
+@import 'footer';
+
+@import 'media';

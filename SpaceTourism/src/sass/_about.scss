@@ -1,0 +1,93 @@
+.about{
+    padding: 100px 0;
+    min-height: 2497px;
+    background: url('../img/about-us-bg.jpg') top center/cover no-repeat;
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &+.about__item{
+            margin-top: 150px;
+        }
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+    }
+    &__img{
+        max-width: 100%;
+    }
+    &__content{
+        width: 600px;
+        &-title{
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 5px;
+        }
+        &-subtitle{
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #036CCA;
+            margin-bottom: 30px;
+        }
+        &-text{
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 50px;
+            p{
+                width: 165px;
+            }
+        }
+    }
+    &__table{
+        border-collapse: collapse; 
+        width: 100%;
+        margin-bottom: 50px;
+        &-tr{
+            border: 1px solid #FFFFFF;
+            border-left: none;
+            border-right: none;
+            &+.about__table-tr{
+                td{
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 43px;
+                    span{
+                        display: block;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+        &-td{
+            padding: 10px 30px 10px 0;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            &:last-child{
+                padding: 10px 5px 10px 0;
+            }
+        }
+        &-caption{
+            caption-side: bottom;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #E5E5E5;
+            span{
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                margin-right: 3px;
+            }
+        }
+    }
+}

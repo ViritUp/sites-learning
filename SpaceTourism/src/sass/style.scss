@@ -1,0 +1,84 @@
+@import 'libs/normalize';
+@import 'libs/slick';
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+body{
+    color: #FFFFFF;
+    font-family: 'SFProDisplay' sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: 'SpaceAgeCyrillic' serif;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.button{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 20px 45px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        box-shadow: 0 0 .25rem rgba(255, 255, 255, 0.5), -.125rem -.125rem 1rem rgba(255, 255, 255, 0.5), .125rem .125rem 1rem rgba(255, 255, 255, 0.5);
+    }
+}
+
+@import 'header';
+@import 'about';
+@import 'how-to';
+@import 'to-book';
+@import 'info';
+@import 'contacts';
+@import 'footer';
+
+@import 'media';
+
+/* font-family: 'SFProDisplay' sans-serif; */
+/* font-family: 'SpaceAgeCyrillic' serif; */

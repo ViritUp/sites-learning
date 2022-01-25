@@ -1,0 +1,48 @@
+.footer{
+    background: url('../img/footer-bg.jpg') top center/cover no-repeat;
+    padding: 100px 0 150px;
+    &__inner{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__text{
+        width: 165px;
+        margin-right: 50px;
+        font-size: 16px;
+        line-height: 19px;
+        p + p{
+            margin-top: 50px;
+        }
+    }
+    &__menu{
+        width: 125px;
+        margin-right: 75px;
+        &-item{
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            a{
+                transition: all .3s;
+                &:hover{
+                    color: #CB0E0E;
+                }
+            }
+        }
+    }
+    &__links{
+        width: 170px;
+        &-item{
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            a{
+                transition: all .3s;
+                &:hover{
+                    color: #CB0E0E;
+                }
+            }
+        }
+    }
+}

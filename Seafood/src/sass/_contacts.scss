@@ -1,0 +1,29 @@
+.contacts{
+    background-image: url('../img/contacts-img.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &__box{
+        margin-left: auto;
+        width: 390px;
+        background-color: #fff;
+        padding: 33px 0 33px 20px;   
+        &-text{
+            font-family: Roboto Slab;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #001E64;
+            width: 195px;
+        }
+        &-list{
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &-item{
+            margin-top: 30px;
+            span{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.how-to{
+    background: url('../img/how-to-bg.jpg') bottom center/cover no-repeat;
+    padding: 90px 0 70px;
+    min-height: 999px;
+    &__box{
+        text-align: center;
+        &-list{
+            display: none;
+            font-size: 18px;
+            line-height: 20px;
+            li{
+                text-align: left;
+                padding-bottom: 30px;
+                padding-left: 20px;
+                margin-left: 20px;
+                position: relative;
+                border-left: 1px solid #fff;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: -10px;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+                &:last-child{
+                    border-left: none;
+                }
+            }
+        }
+        text{
+            font-size: 18px;
+            line-height: 21px;
+        }
+        circle, text, p{
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                fill: #036CCA;
+            }
+        }
+        g:hover{
+            circle{
+                fill: #036CCA;
+            }
+            text{
+                fill: #036CCA;
+                font-size: 36px;
+                line-height: 43px;
+            }
+            foreignObject{
+                p{
+                    color: #036CCA;
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+            }
+        }
+        foreignObject{
+            text-align: left;
+            p{
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+    &__text--special{
+        text-align: right;
+    }
+    .title{
+        margin-bottom: 90px;
+    }
+}

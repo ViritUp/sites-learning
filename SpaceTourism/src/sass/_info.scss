@@ -1,0 +1,161 @@
+.info{
+    background: url('../img/info-bg.jpg') bottom center/cover no-repeat;
+    min-height: 2359px;
+    padding: 100px 0 130px;
+    .special-offer{
+        margin-bottom: 140px;
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item{
+            width: 500px;
+            &-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 1px solid #FFFFFF;
+                margin-bottom: 25px;
+                padding: 40px 75px;
+                width: 500px;
+                min-height: 400px;
+                text-align: center;
+            }
+            &-text{
+                width: 235px;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                margin: 0 auto;
+                span{
+                    color:#CB0E0E;
+                }
+            }
+        }
+        &__price{
+            &-old{
+                text-align: right;
+                font-size: 14px;
+                line-height: 17px;
+                color: #E5E5E5;
+                margin-bottom: 16px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 68px;
+                    height: 1px;
+                    background-color:#CB0E0E;
+                    top: 7px;
+                    right: 0;
+                    transform: rotate(20deg);
+                }
+            }
+            &-new{
+                font-size: 48px;
+                line-height: 57px;
+            }
+        }
+        .button{
+            width: 100%;
+        }
+    }
+
+    .services{
+        margin-bottom: 200px;
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__list{
+            margin-bottom: 25px;
+            padding-left: 36px;
+            &-box{
+                width: 620px;
+                margin-right: 60px;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            &-title{
+                margin-bottom: 25px;
+            }
+            &-item{
+                margin-bottom: 5px;
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    top: 5px;
+                    left: -36px;
+                }
+            }
+            &-descr{
+                font-size: 12px;
+                line-height: 14px;
+                color: #E5E5E5;
+            }
+        }
+        &__buttons{
+            width: 500px;
+            .button{
+                width: 100%;
+            }
+        }
+        &__btn{
+            &--first{
+                margin-bottom: 50px;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 192px;
+                    height: 150px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 41px;
+                    background: url('../img/buy-photo-img.png') center center/cover no-repeat;
+                }
+            }
+        }
+    }
+
+    .slider{
+        text-align: center;
+        &__inner{
+            margin-bottom: 50px;
+            border: 1px solid #FFFFFF;
+            padding: 100px 0;
+        }
+        &__descr{
+            font-family: 'SpaceAgeCyrillic' serif;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__box{
+            &-img{
+                margin: 0 auto;
+            }
+        }
+        .slick-next, .slick-prev{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .slick-prev{
+            left: 70px;
+        }
+        .slick-next{
+            right: 70px;
+        }
+    }
+    
+}

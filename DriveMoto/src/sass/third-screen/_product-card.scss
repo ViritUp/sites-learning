@@ -1,0 +1,124 @@
+.product-card{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-box{
+        width: 500px;
+        padding-top: 64px;
+        text-align: center;
+        position: relative;
+        &::before{
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.12em;
+            padding: 13px 25px;
+            border-radius: 3px;
+        }
+    }
+    &__img{
+        width: 500px;
+        height: 375px;
+        margin-bottom: 17px;
+    }
+    &__content{
+        width: 570px;
+    }
+    &__price-old{
+        font-family: 'Barlow', sans-serif;
+        font-size: 30px;
+        line-height: 44px;
+        color: #000000;
+        display: inline-block;
+        opacity: 0.6;
+        background-image: url('../img/old-line.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__price-new{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 17px;
+    }
+    &__link{
+        font-size: 15px;
+        line-height: 18px;
+        color: #1C62CD;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    &__code{
+        font-size: 15px;
+        line-height: 18px;
+        opacity: 0.6;
+        margin-bottom: 21px;
+    }
+    &__buttons{
+        margin-bottom: 45px;
+        & a+a{
+            margin-left: 30px;
+        }
+    }
+    &__tab{
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        padding-bottom: 5px;
+        padding-right: 17px;
+        margin-bottom: 5px;
+        &+.product-card__tab{
+            padding-left: 17px;
+        }
+        &.tab--active{
+            font-weight: 700;
+            opacity: 1;
+            border-bottom: 2px solid #1C62CD;
+        }
+    }
+    &__list{
+        margin-bottom: 20px;
+    }
+    &__item{  
+        border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+        padding: 15px 0 6px;
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        &-right{
+            min-width: 135px;
+        }
+        &-left{
+            padding-right: 15px;
+        }
+    }
+    &__more{
+        font-size: 14px;
+        line-height: 17px;
+        color: #1C62CD;
+        border-bottom: 1px solid #1C62CD;
+        margin-bottom: 45px;
+    }
+    &__btn button{
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 16px 53px;
+        border: none;
+        background: #1C62CD;
+        border-radius: 3px;
+        display: block;
+        cursor: pointer;
+    }
+    &__btn-mobile{
+        display: none;
+    }
+}

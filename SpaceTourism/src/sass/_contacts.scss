@@ -1,0 +1,57 @@
+.contacts{
+    background-color: #010203;
+    padding: 100px 0;
+    .title{
+        margin-bottom: 50px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box{
+        width: 500px;
+        margin-right: 10px;
+        &-text{
+            font-size: 24px;
+            line-height: 29px;
+            width: 450px;
+            margin-bottom: 80px;
+        }
+    }
+    &__form{
+        &-input{
+            background-color: #010203;
+            border: none;
+            border-bottom: 1px solid #FFFFFF;
+            width: 100%;
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 20px 10px;
+            &::placeholder{
+                font-family: 'SFProDisplay' sans-serif;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+        .button{
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+
+    &__guarantees{
+        width: 600px;
+        &-text{
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &-img{
+            display: block;
+            margin-left: auto;
+        }
+    }
+}

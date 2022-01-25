@@ -1,0 +1,134 @@
+.card__tab{
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.6;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    &-box{
+        background: #F0F0F4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 22px 0 19px;
+        margin-bottom: 50px;
+    }
+    &.tab--active{
+        opacity: 1;
+        border-bottom: 2px solid #1C62CD;
+    }
+}
+.card__top-line{
+    margin-bottom: 20px;
+    .card__label-search{
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(47, 48, 53, .7);
+        position: relative;
+        .card__input-search{
+            background: #F0F0F4;
+            border: none;
+            border-radius: 3px;
+            margin-left: 17px;
+            padding: 9px 37px 9px 17px;
+            margin-right: 100px;
+        }
+        .card__btn-search{
+            background-color: transparent;
+            border: none;
+            background-image: url('../img/search-icon.svg');
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            left: 287px;
+            top: 2px;
+        }
+    }
+    .card__label-pickup{
+        margin-left: 54px;
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(47, 48, 53, .7);
+    }
+}
+.card__list{
+    &-item{
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+        display: flex;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(47, 48, 53, .7);
+        &:first-child{
+            border-bottom: 1px solid transparent;
+        }
+        &title{
+            font-size: 20px;
+            line-height: 24px;
+            color: #2F3035;
+        }
+    }
+    &-address{
+        width: 220px;
+        margin-right: 55px;
+        line-height: 22px;
+    }
+    &-workhours{
+        width: 170px;
+        margin-right: 100px;
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            &+ .card__list-workhours-wrapper{
+                margin-top: 8px;
+            }
+        }
+    }
+    &-available{
+        width: 130px;
+        margin-right: 78px;
+    }
+    &-num{
+        width: 50px;
+        margin-right: 100px;
+    }
+    &-btn{
+        margin-left: auto;
+        width: 180px;
+        button{
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.12em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            padding: 10px 40px;
+            background: #1C62CD;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}
+.jq-checkbox, .jq-radio{
+    vertical-align: -2px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 1px;
+    background: #fff;
+    box-shadow: none;
+    margin: 0 8px 0 0;
+}
+.jq-checkbox.checked, .jq-radio.checked {
+    background: #1c62cd;
+    border: none;
+}
+.jq-radio.checked .jq-radio__div {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background: 0 0;
+    box-shadow: none;
+}

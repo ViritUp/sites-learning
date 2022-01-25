@@ -1,0 +1,542 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #0B0B0B;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.header{
+    height: 100vh;
+    padding: 31px 0 26px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 5px;
+    margin-bottom: 29px;
+}
+.header__menu-btn{
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    padding: 17px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.header__menu-btn span{
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+}
+.header__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 96px;
+    line-height: 112px;
+    margin-bottom: 40px;
+}
+.header__text{
+    width: 284px;
+    margin-bottom: 30px;
+}
+.test__btn{
+    width: 290px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.test__btn:hover{
+    background: #770302;
+}
+.test__btn a{
+    display: block;
+    padding: 30px 62px;
+}
+
+.header__slider-item{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.header__slider .slick-dots button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #0B0B0B;
+    border: none;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+}
+.header__slider .slick-dots .slick-active button{
+    background-color: #FFF;
+}
+.header__slider .slick-dots li{
+    display: inline-block;
+    margin: 10px;
+}
+.header__slider .slick-dots{
+    position: relative;
+    z-index: 6;
+    max-width: 1220px;
+    margin: -55px auto 0;
+}
+.container__menu{
+    position: relative;
+}
+.menu{
+    background: #000000;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    transition: all .5s;
+    z-index: 7;
+}
+.menu.active{
+    left: 0;
+}
+.close__btn{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 31px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.close__btn::after,
+.close__btn::before{
+    content:"";
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transform-origin: left;
+}
+.close__btn::after{
+    transform: rotate(45deg);
+}
+.close__btn::before{
+    transform: rotate(-45deg);
+    bottom: -1px;
+}
+.menu__list{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+.menu__list ul{
+    list-style: none;
+}
+.menu__list a{
+    padding-bottom: 14px;
+    border-bottom: 3px solid #B70021;
+    transition: all 0.5s;
+}
+.menu__list li a{
+    padding-top: 30px;
+    display: block;
+    width: 368px;
+}
+.menu__list a:hover{
+    border-bottom: 3px solid #FFFFFF;
+    color:#B70021;
+    transform: scale(1.2);
+    margin-left: 35px;
+}
+
+
+.features{
+    padding: 105px 0 100px;
+}
+.features__inner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature__item{
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+.feature__item-title{
+    margin-bottom: 19px;
+}
+.feature__item-num{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 112px;
+    margin-bottom: 10px;
+}
+.feature__item-num span{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+.feature__item-text{
+    color: #B70021;
+}
+.feature__item-num--plus::after{
+    content: "+";
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    position: absolute;
+    right: 56px;
+}
+.video{
+    margin-bottom: 100px;
+}
+
+.advantages__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+    
+}
+.advantages__item-info{
+    width: 100%;
+}
+.advantages__item-info-title{
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #B70021;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.advantages__item-info-title--bottom{
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+}
+.advantages__item-info-text{
+    width: 300px;
+}
+.advantages__item-info-list {
+    list-style: none;
+    margin-left: 56px;
+}
+
+.design{
+    margin-bottom: 100px;
+}
+.design__img{
+    margin-bottom: 100px;
+}
+.design__img img{
+    width: 100%;
+}
+.design__inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 55px;
+}
+.design__info-item-num{
+    color: #B70021;
+}
+.design__info-item-descr{
+    margin-left: 105px;
+}
+
+.footer{
+    padding: 83px 0 20px;
+    background: #690102;
+}
+.footer__btn{
+    margin: 0 auto 83px;
+}
+.footer__btn:hover{
+    background: #fff;
+    color: #690102;
+}
+.footer__copy ul{
+    list-style: none;
+    text-align: center;
+}
+.footer__copy li{
+    display: inline-block;
+}
+.footer__copy li::after{
+    content: "|";
+}
+.footer__copy li:last-child:after{
+    content: "";
+}
+.footer__copy a{
+    padding: 0 15px 0 10px;
+}
+
+
+
+@media (max-width: 900px){
+    .advantages__item-img img{
+        width: 450px;
+    }
+    .design{
+        margin-bottom: 50px;
+    }
+    .design__img{
+        margin-bottom: 25px;
+    }
+    .design__inner{
+        grid-gap: 35px;
+    }
+    .design__info-item-descr{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 800px){
+    .features{
+        padding: 60px 0 10px;
+    }
+    .feature__item{
+        margin-bottom: 40px;
+    }
+    .feature__item-title{
+        margin-bottom: 8px;
+    }
+    .feature__item-num{
+        line-height: 96px;
+    }
+    .video{
+        margin-bottom: 50px;
+    }
+    .advantages__item{
+        margin-bottom: 75px;
+        flex-wrap: wrap;
+    }
+    .advantages__item-img, .advantages__item-img img {
+        width: 100%;
+    }
+    .advantages__item--mobile .advantages__item-info-title{
+        order: 1;
+        width: 100%;
+    }
+    .advantages__item--mobile .advantages__item-info{
+        order: 2;
+        margin-bottom: 20px;
+    }
+    .advantages__item--mobile .advantages__item-img{
+        order: 3;
+    }
+    .advantages__item-info-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .advantages__item-info-title{
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .advantages__item-info-list{
+        margin-left: 0;
+    }
+    .design__inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .header__inner{
+        display: block;
+    }
+    .header__menu-btn{
+        position: absolute;
+        top: 31px;
+        right: 10px;
+    }
+    .header__text{
+        width: 100%;
+    }
+    .advantages__item{
+        text-align: center;
+    }
+    .design__info-item-descr{
+        margin-left: 40px;
+    }
+    .footer{
+        padding-top: 50px;
+    }
+    .footer .footer__btn{
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 460px){
+    .logo{
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 15px;
+    }
+    .header__menu-btn{
+        top: 15px;
+    }
+    .header__title{
+        text-align: center;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .header__text{
+        text-align: center;
+    }
+    .test__btn{
+        margin: 0 auto;
+    }
+    .menu__list{
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .menu__list li a{
+        width: 250px;
+    }
+    .menu__list a:hover{
+        transform: scale(1.1);
+        margin-left: 12px;
+    }
+    .close__btn{
+        top: 20px;
+    }
+    .advantages__item-info-text, .advantages__item-info-list{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .design__info-item-descr{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer__copy a{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+@media (max-height: 600px){
+    .header__text{
+        width: 100%;
+    }
+    .header__slider .slick-dots{
+        display: none !important;
+    }
+    .menu__list{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .menu__list li a{
+        width: 250px;
+    }
+    .menu__list a:hover{
+        transform: scale(1.1);
+        margin-left: 12px;
+    }
+}
+
+@media (max-height: 450px){
+    .header__title{
+        font-size: 85px;
+        line-height: 95px;
+        margin-bottom: 13px;
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-height: 400px){
+    .header{
+        padding: 20px 0;
+    }
+    .header__title{
+        font-size: 72px;
+        line-height: 78px;
+    }
+    .header__text{
+        margin-bottom: 16px;
+    }
+    .menu__list li a{
+        padding-top: 15px;
+    }
+}
+
+@media (max-height: 350px){
+    .header__text{
+        display: none;
+    }
+    .logo{
+        padding-top: 0;
+    }
+    .header__title{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .menu__list li a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 200px;
+    }
+    .menu__list{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+}
+
+@media (max-height: 280px){
+    .test__btn {
+        width: 260px;
+        height: 70px;
+    }
+    .test__btn a{
+        padding: 20px 47px;
+    }
+    .header__menu-btn{
+        top: 25px;
+    }
+}

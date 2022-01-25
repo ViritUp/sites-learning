@@ -1,0 +1,264 @@
+@media (max-width: 1400px)
+    .nav__item
+        padding-right: 36px
+
+@media (max-width: 1200px)
+    .menu__link
+        font-size: 12px
+    .nav__item
+        padding-right: 23px
+    .promo__header
+        font-size: 50px
+    .promo__subheader
+        font-size: 30px
+    .reasons__descr
+        max-width: 310px 
+    .mobile-item
+        width: 280px
+        height: 245px
+    .footer__links
+        width: 360px
+    .footer__download
+        width: 255px
+    .img_link
+        width: 30%
+    
+
+@media (max-width: 991px)
+    .menu__link
+        font-size: 10px
+    .nav__item
+        padding-right: 12px
+    .subheader__logo
+        img
+            width: 100%
+    .subheader__descr
+        font-size: 10px
+    .subheader__phone
+        font-size: 18px
+    .subheader__btn
+        margin-top: 21px
+        height: 40px
+        width: 100%
+    .promo__header
+        font-size: 40px
+    .promo__subheader
+        font-size: 25px
+    .reasons__block
+        flex-direction: column
+        align-items: center
+    .reasons__descr
+        margin-top: 20px
+        width: 300px
+    .reasons__round
+        margin-right: 0
+    .mobile-item__subtitle
+        font-size: 21px
+    .choose__car
+        width: 100%
+    .world
+        min-height: 570px
+    .img_link
+        width: 32%
+    .footer__download
+        right: 50%
+        top: 144px
+        transform: translateX(50%)
+    .footer
+        padding: 12px 22px 100px 22px
+    .footer__media
+        right: 50%
+        top: 95px
+        transform: translateX(50%)
+
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0,0.8)
+        transition: 0.6s
+    .menu__active
+        left: 0
+    .nav__item
+        padding-right: 0
+        border: none
+        margin: 20px 0
+    .menu__link
+        font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &__phone
+            display: block
+            margin-top: 10px
+            font-size: 16px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+        &__btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo__header
+        font-size: 40px
+        line-height: 45px
+    .reasons__descr
+        margin-left: 0
+    .mobile-item
+        width: 235px
+        height: 215px
+    .mobile-item__subtitle
+        font-size: 18px
+    .mobile
+        padding-bottom: 20px
+    .choose
+        min-height: 839px
+        padding: 56px 0 116px 0
+
+@media (max-width: 575px)
+    nav
+        height: 30px
+    .subheader__descr
+        display: none
+    .subheader__logo
+        margin-top: 17px
+    .subheader
+        height: 60px
+        top: 30px
+        &__phone
+            font-size: 12px
+            margin-top: 10px
+        &__btn
+            width: 116px
+            height: 25px
+            font-size: 10px
+            margin-top: 6px
+    .promo
+        min-height: 400px
+        padding: 130px 0 35px 0
+        &__descr
+            display: none
+        &__header
+            font-size: 30px
+            line-height: 35px
+            padding: 0 24px
+        &__subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &__btn
+            width: 189px
+            height: 50px
+            font-size: 16px
+            margin-top: 72px
+    .menu
+        width: 85% 
+    .nav__item
+        width: 100%
+        text-align: center
+        padding: 5px 0
+    .menu__link
+        display: block
+    .reasons
+        padding: 22px 0 37px 0
+        &__block
+            margin-top: 26px
+        &__media-round
+            width: 100px
+            height: 100px
+        &__descr
+            width: 100%
+            margin-top: 24px
+        &__subtitle
+            font-size: 16px
+    .title
+        font-size: 16px
+        margin-top: 15px
+    .subtitle
+        font-size: 14px
+    .mobile-item
+        width: 290px
+        height: 254px
+    .choose
+        padding: 26px 0 31px 0
+        min-height: 400px
+        background: #070716
+    .choose .title_white, .choose .subtitle_white
+        display: none
+    .choose__text
+        font-size: 17px
+        line-height: 24px
+        color: #FFFFFF
+    .require
+        padding: 22px 0 30px 0
+    .require__title
+        font-size: 16px
+    .require__list
+        padding-left: 30px
+        li
+            font-size: 14px
+            line-height: 16px
+    .require__block 
+        margin: 16px 0
+    .world
+        min-height: 360px
+        padding: 24px 0 29px 0
+    .world .label_white
+        width: 79px
+    .world__show
+        display: block
+        width: 100%
+        font-size: 15px
+    .footer__main-link
+        font-size: 14px
+    .footer__links
+        width: 100%
+    .footer__sublinks
+        flex-wrap: wrap
+        justify-content: space-around
+        width: 89%
+        margin: 0 auto
+        margin-top: 10px
+    .footer__sublink
+        line-height: 15px
+    .footer-divider
+        width: 270px
+    .footer__lang-link
+        padding-top: 13px

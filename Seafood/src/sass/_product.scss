@@ -1,0 +1,101 @@
+.product{
+    padding-top: 100px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name{
+        width: 510px;
+        text-align: center;
+        padding-top: 43px;
+        &-item{
+            font-family: Roboto Slab;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            cursor: pointer;
+            &.slick-current{
+                font-weight: bold;
+                font-size: 36px;
+                color: #001E64;
+            }
+        }
+        &-item + .product__name-item{
+            margin-top: 30px;
+        }
+    }
+    &__content{
+        width: 600px;
+        &-box{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-img{
+            width: 260px;
+        }
+        &-list{
+            width: 291px;
+        }
+        &-listitem{
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 30px;
+            span{
+                display: block;
+                margin-bottom: 10px;
+                font-family: Roboto Slab;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #001E64;
+            }
+        }
+        &-title{
+            font-family: Roboto Slab;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #001E64;
+            margin-bottom: 20px;
+            padding-top: 10px;
+        }
+        &-text{
+            margin-bottom: 20px;
+        }
+        &-btn{
+            display: inline-block;
+            padding: 12px 85px;
+            border-radius: 20px;
+            border: 1px solid #001E64;
+            background-color: transparent;
+            font-family: Roboto Slab;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: #001E64;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all .3s;
+            &:hover{
+                color: #FFFFFF;
+                background: #001E64;
+            }
+        }
+    }
+    .product-prev,
+    .product-next{
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0;
+    }
+    .product-prev{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}

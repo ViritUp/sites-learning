@@ -1,0 +1,70 @@
+@import 'libs/normalize';
+@import 'libs/slick';
+@import 'libs/ion.rangeSlider';
+@import 'libs/jquery.formstyler';
+@import 'libs/jquery.formstyler.theme';
+@import 'libs/jquery.rateyo';
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+body{
+    color: #2F3035;
+    font-family: 'SFProDisplay' sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page-section{
+    margin-bottom: 80px;
+}
+
+@import 'header';
+@import 'products';
+@import 'footer';
+@import 'breadcrumbs';
+
+@import 'first-screen/banner-section';
+@import 'first-screen/search';
+@import 'first-screen/categories';
+@import 'first-screen/banner';
+
+@import 'second-screen/catalog';
+
+@import 'third-screen/product-card';
+@import 'third-screen/product-card__tabs';
+
+@import 'media';

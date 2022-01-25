@@ -1,0 +1,314 @@
+@media (max-width: 992px){
+    .catalog__content{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px){
+    .slider{
+        width: 80%;
+        img{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 820px){
+    .consultation{
+        &__title{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 800px){
+    .advantages{
+        padding: 50px 0;
+        &__title{
+            margin-bottom: 25px;
+        }
+        &__inner{
+            justify-content: space-around;
+        }
+        &__item{
+            margin: 0 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .header{
+        min-height: 600px;
+        padding: 21px 0 42px;
+        &-top{
+            display: block;
+            &__logo{
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+            &__official{
+                margin-bottom: 10px;
+            }
+            &__phone{
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            button{
+                margin: 0 auto;
+            }
+        }
+        &__inner{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        &__items{
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+    }
+    .button--main{
+        margin-top: 45px;
+    }
+    .catalog{
+        &__tab{
+            width: 175px;
+            height: 45px;
+            line-height: 44px;
+        }
+    }
+    .reviews{
+        &__item{
+            margin-top: 45px;
+            &-img{
+                margin-right: 30px;
+            }
+            &-review{
+                margin-right: 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 650px){
+    .slider{
+        width: 100%;
+    }
+    .slick-dots button{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #FFF;
+        border: 1px solid #000;
+        padding: 0;
+        font-size: 0;
+        cursor: pointer;
+        outline: none;
+    }
+    .slick-dots .slick-active button{
+        background-color:#000;
+    }
+    .slick-dots li{
+        display: inline-block;
+        margin: 10px;
+    }
+    .slick-dots{
+        position: relative;
+        z-index: 6;
+        text-align: center;
+    }
+    .carousel{
+        padding: 50px 0;
+        .slick-next, .slick-prev{
+            display: none !important;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .catalog{
+        padding-bottom: 40px;
+        &__tabs{
+            flex-wrap: wrap;
+        }
+        &__tab{
+            margin-bottom: 10px;
+        }
+    }
+    .reviews{
+        &__item{
+            &-img{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .footer{
+        &__info{
+            padding: 25px;
+            width: 380px;
+            height: 215px;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .header{
+        min-height: 460px;
+        &__inner{
+            margin-top: 25px;
+        }
+        &__title{
+            font-size: 33px;
+            line-height: 37px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 8px;
+        }
+        &__items{
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+    }
+    .button--main{
+        margin-top: 30px;
+    }
+    .advantages{
+        &__item{
+            &-icon{
+                margin-bottom: 15px;
+            }
+            &-title{
+                margin-bottom: 10px;
+            }
+        }
+        &__title{
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+    .consultation{
+        min-height: 580px;
+        padding: 50px 0;
+        &__title{
+            font-size: 25px;
+            line-height: 32px;
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+    .form{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .catalog{
+        &__title{
+            font-size: 25px;
+            line-height: 32px;
+            margin-bottom: 30px;
+        }
+        &__content{
+            margin-top: 40px;
+        }
+    }
+    .reviews{
+        &__title{
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+    .modal{
+        width: 295px;
+        padding: 20px;
+    }
+    .form--mt25{
+        width: 245px;
+    }
+    .pageup{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .reviews{
+        &__item{
+            display: block;
+            position: relative;
+            &-person{
+                position: absolute;
+                top: 25px;
+                left: 115px;
+            }
+        }
+    }
+    .footer{
+        &__info{
+            width: 280px;
+            height: 260px;
+        }
+    }
+}
+
+
+@media (max-width: 400px){
+    .header{
+        &-top{
+            .button{
+                display: none;
+            }
+        }
+        &__items{
+            justify-content: space-between;
+        }
+        &__item{
+            width: 100%;
+        }
+    }
+    .button--main{
+        width: 265px;
+        height: 45px;
+    }
+    .form{
+        width: 280px;
+    }
+    .catalog{
+        &__item{
+            padding: 10px;
+            padding-top: 20px;
+        }
+        &__footer{
+            display: block;
+            text-align: center;
+        }
+    }
+    .button--mini{
+        margin-top: 12px;
+    }
+    .modal{
+        width: 295px;
+        padding: 20px;
+        &__close{
+            right: 4px;
+            top: 6px;
+        }
+    }
+    .form--mt25{
+        width: 245px;
+    }
+}
