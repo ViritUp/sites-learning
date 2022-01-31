@@ -1,0 +1,141 @@
+.resume{
+    padding-top: 120px;
+    &__subtitle{
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before{
+            left: 48.45%;
+        }
+    }
+    &__title{
+        position: relative;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-bottom: 60px;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $main-color;
+        }
+    }
+    &__wrapper{
+        padding: 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column{
+        padding-left: 44px;
+        &-title{
+            position: relative;
+            margin-bottom: 45px;
+            &:before{
+                content:"";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color;
+                left: -44px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-list{
+            &Item{
+                position: relative;
+                margin-bottom: 45px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 143%;
+                    left: -37.5px;
+                    top: -53px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 37px;
+            background-color: #000;
+            left: -36px;
+            top: 18px;
+        }
+        &-head{
+            position: relative;
+            padding-left: 56px;
+            margin-bottom: 12px;
+            @include before_circle;
+            &:before{
+                top: 0;
+            }
+            &.university{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    left: 18px;
+                    width: 19.79px;
+                    height: 25px;
+                    background: url('../icons/experience/university.svg') center center/cover no-repeat;
+                }
+            }
+            &.course{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 16px;
+                    left: 15px;
+                    width: 25px;
+                    height: 23.43px;
+                    background: url('../icons/experience/courses.svg') center center/cover no-repeat;
+                }
+            }
+            &.developer{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    left: 17px;
+                    width: 25px;
+                    height: 25px;
+                    background: url('../icons/experience/developer.svg') center center/cover no-repeat;
+                }
+            }
+            &.designer{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    width: 25px;
+                    height: 25px;
+                    background: url('../icons/experience/designer.svg') center center/cover no-repeat;
+                }
+            }
+        }
+        &-location{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

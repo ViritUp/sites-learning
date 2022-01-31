@@ -19,6 +19,71 @@
         justify-content: space-between;
         align-items: center;
         width: 280px;
+        .btn-1 {
+            border: 0 solid;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+            outline: 1px solid;
+            outline-color: rgba(0, 0, 0, 0.5);
+            outline-offset: 0px;
+            text-shadow: none;
+            transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+        } 
+        .btn-1:hover {
+            border: 1px solid;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(0, 0, 0, 0.2);
+            outline-color: rgba(255, 255, 255, 0);
+            outline-offset: 15px;
+        }
+        .btn-2{
+            position: relative;
+        }
+        .btn-2::before, .btn-2::after{
+            content:"";
+            width: 0;
+            height: 2px;
+            position: absolute;
+            transition: all 0.2s linear;
+            background: $main-color;
+        }
+        .btn-2 span::before, .btn-2 span::after{
+            content:"";
+            width:2px;
+            height:0;
+            position: absolute;
+            transition: all 0.2s linear;
+            background: $main-color;
+          }
+        .btn-2::before, .btn-2::after{
+            transition-delay: 0s;
+        }
+        .btn-2 span::before, .btn-2 span::after{
+            transition-delay: 0.2s;
+        }
+        .btn-2::before{
+            right: 0;
+            top: 0;
+        }
+        .btn-2::after{
+            left: 0;
+            bottom: 0;
+        }
+        .btn-2 span::before{
+            left: 0;
+            top: 0;
+        }
+        .btn-2 span::after{
+            right: 0;
+            bottom: 0;
+        }
+        .btn-2:hover::before, .btn-2:hover::after{
+            transition-delay: 0.2s;
+            width: 100%;
+        }
+        .btn-2:hover span::before, .btn-2:hover span::after{
+            transition-delay: 0s;
+            height: 100%;
+        }
+        
     }
     &__btn{
         color: #000000;
@@ -29,4 +94,7 @@
             text-decoration: none;
         }
     }
+    
 }
+
+  

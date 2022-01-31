@@ -1,0 +1,102 @@
+.about-me{
+    padding-top: 120px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 400px 600px;
+        grid-template-rows: auto 310px;
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__photo{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        img{
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    &__subtitle{
+        padding: 6px 0 6px 12px;
+        position: relative;
+        @include before_circle;
+        &:before{
+            top: 0;
+        }
+    }
+    &__title{
+        position: relative;
+        margin-bottom: 22px;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: $main-color;
+        }
+    }
+    &__info{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__skills{
+        display: grid;
+        height: 250px;
+        grid-template-columns: 260px 260px;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 40px;
+        &-item{
+            position: relative;
+            padding-left: 60px;
+            @include before_circle;
+            &:before{
+                top: 0;
+            }
+            &.web-dev{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    width: 25px;
+                    height: 23.45px;
+                    background: url('../icons/about_me/web_development.svg') center center/cover no-repeat;
+                }
+            }
+            &.app-dev{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    left: 18px;
+                    width: 13.28px;
+                    height: 24.22px;
+                    background: url('../icons/about_me/mobile_dev.svg') center center/cover no-repeat;
+                }
+            }
+            &.design{
+                &:after{
+                    content: "";
+                    position: absolute; 
+                    top: 16px;
+                    left: 15px;
+                    width: 25px;
+                    height: 20.56px;
+                    background: url('../icons/about_me/design.svg') center center/cover no-repeat;
+                }
+            }
+        }
+        &-title{
+            margin-bottom: 6px;
+        }
+        &-text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

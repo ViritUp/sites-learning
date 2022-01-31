@@ -1,0 +1,98 @@
+.skills{
+    padding-top: 85px;
+    &__subtitle{
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before{
+            left: 48.45%;
+        }
+    }
+    &__title{
+        position: relative;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-bottom: 60px;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $main-color;
+        }
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 13px;
+        margin-bottom: 120px;
+    }
+    &__item{
+        width: 275px;
+        min-height: 270px;
+        border: 1px solid #000000;
+        padding: 30px;
+        &-img{
+            height: 65px;
+            margin-bottom: 20px;
+            &.jquery{
+                padding-top: 20px;
+            }
+            img{
+                max-height: 65px;
+                object-fit: cover;
+            }
+        }
+        &-title{
+            margin-bottom: 15px;
+        }
+        &-descr{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__statistics{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 45px;
+        row-gap: 30px;
+        &-head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        &-title{
+            position: relative;
+            padding: 8px 0 0 13px;
+            @include before_circle;
+            &:before{
+                top: 0;
+            }
+        }
+        &-percent{
+            padding-top: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-statusbar{
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            span{
+                display: block;
+                height: 14px;
+                border-radius: 4px;
+                background: $main-color;
+            }
+        }
+    }
+}
