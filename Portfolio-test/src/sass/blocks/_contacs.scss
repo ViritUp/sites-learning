@@ -1,0 +1,126 @@
+.contacts{
+    padding: 120px 90px;
+    &__wrapper{
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+    }
+    &__photo{
+        img{
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    &__subtitle{
+        padding: 6px 0 6px 12px;
+        position: relative;
+        @include before_circle;
+        &:before{
+            top: 0;
+        }
+    }
+    &__title{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: $main-color;
+        }
+    }
+    &__text{
+        margin: 20px 0;
+    }
+    &__social{
+        &-link{
+            margin-right: 20px;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            &:hover{
+                svg path{
+                    transition: all .4s;
+                    fill: $main-color;
+                }
+            } 
+        }
+    }
+    &__form{
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        justify-content: space-between;
+        row-gap: 30px;
+        label{
+            position: absolute;
+            display: block;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+    &__triggers{
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 220px auto;
+        align-items: center;
+        column-gap: 35px;
+    }
+    &__policy{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        a{
+            color:#2306D6;
+        }
+        input{
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+        span{
+            display: block;
+        }
+    }
+    &__input{
+        position: relative;
+        input{
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+        
+    }
+    &__textarea{
+        position: relative;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        textarea{
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+    &__btn{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
