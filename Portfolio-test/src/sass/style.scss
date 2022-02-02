@@ -28,9 +28,11 @@ p{
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
-
+body{
+    min-width: 320px;
+}
 .container{
-    width: 1160px;
+    max-width: 1160px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -46,3 +48,5 @@ h1, h2, h3, h4, h5, h6{
 @import 'blocks/portfolio';
 @import 'blocks/price';
 @import 'blocks/contacs';
+
+@import 'blocks/media';
