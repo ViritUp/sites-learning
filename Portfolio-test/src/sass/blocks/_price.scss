@@ -26,6 +26,7 @@
         grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 365px);
         justify-content: space-between;
         row-gap: 15px;
+        padding: 0 60px;
     }
     &__item{
         position: relative;

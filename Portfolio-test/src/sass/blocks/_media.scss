@@ -18,6 +18,81 @@
             column-gap: 20px;
         }
     }
+    .resume{
+        &__wrapper{
+            padding: 0 20px;
+            column-gap: 60px;
+        }
+        &__subtitle{
+            &:before{
+                left: 48.2%;
+            }
+        }
+    }
+    .skills{
+        &__wrapper {
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: auto;
+            justify-items: center;
+        }
+        &__statistics{
+            &-statusbar{
+                width: 100%;
+            }
+        }
+        &__subtitle{
+            &:before{
+                left: 48.2%;
+            }
+        } 
+    }
+    .portfolio{
+        &__wrapper{
+            grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 35px;
+            .vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+            .horizonal{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+        &__subtitle{
+            &:before{
+                left: 48.2%;
+            }
+        }
+    }
+    .contacts{
+        padding: 120px 0;
+        &__wrapper{
+            grid-template-columns: 350px 495px;
+            justify-content: start;
+        }
+        &__img{
+            img{
+                width: 350px;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__title{
+            font-size: 44px;
+        }
+        &__form{
+            grid-template: 45px 190px 100px / repeat(2,240px);
+        }
+        &__triggers{
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+        }
+        &__btn{
+            order: 2;
+        }
+    }
 }
 
 @media (max-width: 992px){
@@ -41,6 +116,75 @@
         &__skills{
             grid-template-columns: 360px; 
             grid-auto-rows: minmax(115px, auto);
+        }
+    }
+    .resume{
+        &__wrapper{
+            padding: 0;
+            column-gap: 40px;
+            grid-template-columns: repeat(2, 340px);
+        }
+        &__subtitle{
+            &:before{
+                left: 47.5%;
+            }
+        }
+        &__title{
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+    }
+    .skills{
+        &__item{
+            padding: 20px;
+            width: auto;
+        }
+        &__statistics{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        &__subtitle{
+            &:before{
+                left: 47.5%;
+            }
+        }
+    }
+    .portfolio{
+        &__subtitle{
+            &:before{
+                left: 47.8%;
+            }
+        }
+    }
+    .price{
+        &__title{
+            &:before{
+                left: 47.5%;
+            }
+        }
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 0;
+        }
+    }
+    .contacts{
+        &__wrapper{
+            padding: 0;
+            grid-template-columns: 350px 340px;
+        }
+        &__form{
+            grid-template: 45px 45px 150px 90px /1fr;
+            row-gap: 25px;
+        }
+        &__triggers{
+            grid-column: unset;
+        }
+        &__textarea{
+            grid-column: unset;
+            grid-row: unset;
+        }
+        &__title{
+            font-size: 34px;
         }
     }
 }
@@ -80,6 +224,60 @@
             }
         }
     }
+    .resume{
+        &__wrapper{
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+        }
+        &__subtitle{
+            &:before{
+                left: 46.8%;
+            }
+        }
+    }
+    .skills{
+        &__wrapper {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .portfolio{
+        &__subtitle{
+            &:before{
+                left: 46.8%;
+            }
+        }
+    }
+    .price{
+        &__title{
+            &:before{
+                left: 46.8%;
+            }
+        }
+        &__wrapper{
+            justify-content: center;
+            grid-auto-rows: minmax(45px, auto);
+        }
+    }
+    .contacts{
+        padding: 60px 0;
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__img{
+            display: none;
+        }
+        &__form{
+            grid-template: 45px 190px 100px / repeat(2,250px);
+        }
+        &__textarea{
+            grid-row: 2 / 3;
+            grid-column: 1 / 3;
+        }
+        &__triggers{
+            grid-column: 1 / 3;
+        }
+    }
+    
 }
 
 @media (max-width: 576px){
@@ -125,6 +323,94 @@
         }
         &__skills{
             grid-template-columns: 1fr;
+        }
+    }
+    .resume{
+        padding-top: 185px;
+        &__subtitle{
+            margin-bottom: 10px;
+            &:before{
+                left: 44.2%;
+            }
+        }
+    }
+    .skills{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template-columns: repeat(1,1fr);
+            margin-bottom: 40px;
+        }
+        &__item{
+            padding: 30px;
+        }
+        &__title{
+            line-height: 36px;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        &__subtitle{
+            margin-bottom: 10px;
+            &:before{
+                left: 44.2%;
+            }
+        }
+        &__statistics {
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+        }
+    }
+    .portfolio{
+        padding-top: 50px;
+        &__wrapper{
+            row-gap: 15px;
+        }
+        &__title{
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            line-height: 36px;
+        }
+        &__subtitle{
+            margin-bottom: 10px;
+            &:before{
+                left: 44.2%;
+            }
+        }
+    }
+    .price{
+        padding-top: 40px;
+        &__title{
+            margin-bottom: 25px;
+            &:before{
+                left: 44.2%;
+            }
+        }
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 290px);
+        }
+    }
+    .contacts{
+        padding: 40px 0 50px;
+        &__form{
+            grid-template: 45px 45px 150px 90px /1fr;
+            row-gap: 25px;
+        }
+        &__triggers{
+            grid-column: unset;
+            width: 220px;
+        }
+        &__textarea{
+            grid-column: unset;
+            grid-row: unset;
+        }
+        &__policy{
+            margin-bottom: 20px;
+            margin-left: 20px;
+            a{
+                display: inline;
+            }
+            input{
+                margin-top: 10px;
+            }
         }
     }
 }
