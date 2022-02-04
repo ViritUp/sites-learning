@@ -10,6 +10,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     display: inline-block;
     text-decoration: none;

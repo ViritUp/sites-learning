@@ -16,3 +16,5 @@ const percent = document.querySelectorAll('.skills__statistics-percent');
 percent.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+new WOW().init();

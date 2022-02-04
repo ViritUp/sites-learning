@@ -40,7 +40,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -68,12 +68,12 @@
             </div>
             <nav>
                 <ul class=" menu__list">
-                    <li class="menu__list-item"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__list-item"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__list-item"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__list-item"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__list-item"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__list-item"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__list-item"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__list-item"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__list-item"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__list-item"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__list-item"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__list-item"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -104,7 +104,7 @@
             <span class="long"></span>
             <span></span>
         </div>
-        <div class="container">
+        <div class="container animate__animated animate__fadeIn wow">
             <div class="title title--fz16 promo__subtitle">Меня зовут Александра Смит</div>
             <h1 class="title title--fz48 promo__title">Я web-разработчик из города Москва</h1>
             <div class="promo__buttons">
@@ -114,8 +114,8 @@
         </div>
     </section>
 
-    <section class="about-me">
-        <div class="container">
+    <section class="about-me" id="about">
+        <div class="container animate__animated animate__fadeIn wow">
             <div class="about-me__wrapper">
                 <div class="about-me__photo">
                     <img src="img/main_photo.jpg" alt="main photo">
@@ -151,8 +151,8 @@
         </div>
     </section>
 
-    <section class="resume">
-        <div class="container">
+    <section class="resume" id="resume">
+        <div class="container animate__animated animate__fadeIn wow">
             <h3 class="title title--fz16 resume__subtitle">Опыт</h3>
             <h2 class="title title--fz36 resume__title">Чем я буду полезна</h2>
             <div class="resume__wrapper">
@@ -215,11 +215,11 @@
         </div>
     </section>
  
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
-            <h3 class="title title--fz16 skills__subtitle">Навыки</h3>
-            <h2 class="title title--fz36 skills__title">Что я использую в работе</h2>
-            <div class="skills__wrapper">
+            <h3 class="title title--fz16 skills__subtitle animate__animated animate__fadeIn wow">Навыки</h3>
+            <h2 class="title title--fz36 skills__title animate__animated animate__fadeIn wow">Что я использую в работе</h2>
+            <div class="skills__wrapper animate__animated animate__fadeIn wow">
                 <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/html5.svg" alt="Html5">
@@ -271,7 +271,7 @@
                 </div>
             </div>
 
-            <div class="skills__statistics">
+            <div class="skills__statistics animate__animated animate__fadeIn wow">
                 <div class="skills__statistics-item">
                     <div class="skills__statistics-head">
                         <h6 class="skills__statistics-title title title--fz14">Создание сайтов</h6>
@@ -330,35 +330,47 @@
         </div>
     </section>
 
-    <section class="portfolio">
-        <div class="container">
+    <section class="portfolio" id="portfolio">
+        <div class="container animate__animated animate__fadeIn wow">
             <h3 class="title title--fz16 portfolio__subtitle">Портфолио</h3>
             <h2 class="title title--fz36 portfolio__title">Мои работы</h2>
             <div class="portfolio__wrapper">
-                <a class="portfolio__item" href="#">
-                    <img class="portfolio__item-img" src="img/works/uber.jpg" alt="uber">
+                <a class="portfolio__item horizonal-1" href="Tesla/index.html">
+                    <img class="portfolio__item-img" src="img/works/tesla.jpg" alt="tesla">
                 </a>
-                <a class="portfolio__item" href="#">
+                <a class="portfolio__item" href="RunSmart/dist/index.html">
                     <img class="portfolio__item-img" src="img/works/pulse.jpg" alt="pulse">
                 </a>
-                <a class="portfolio__item" href="#">
-                    <img class="portfolio__item-img" src="img/works/bread.jpg" alt="bread">
+                <a class="portfolio__item vertical-1" href="Seafood/dist/index.html">
+                    <img class="portfolio__item-img" src="img/works/seafood.jpg" alt="seafood">
                 </a>
-                <a class="portfolio__item vertical" href="#">
-                    <img class="portfolio__item-img" src="img/works/plans.jpg" alt="plans">
+                <a class="portfolio__item vertical-2" href="SpaceTourism/dist/index.html">
+                    <img class="portfolio__item-img" src="img/works/space.jpg" alt="space">
                 </a>
-                <a class="portfolio__item" href="#">
-                    <img class="portfolio__item-img" src="img/works/ipad.jpg" alt="ipad">
+                <a class="portfolio__item horizonal-2" href="BusinessWeb/dist/index.html">
+                    <img class="portfolio__item-img" src="img/works/business.jpg" alt="business">
                 </a>
-                <a class="portfolio__item horizonal" href="#">
-                    <img class="portfolio__item-img" src="img/works/mac.jpg" alt="mac">
+                <a class="portfolio__item" href="Safari/index.html">
+                    <img class="portfolio__item-img" src="img/works/safari.jpg" alt="safari">
+                </a>
+                <a class="portfolio__item horizonal-3" href="DriveMoto/dist/index.html">
+                    <img class="portfolio__item-img" src="img/works/drive-moto.jpg" alt="drive-moto">
+                </a>
+                <a class="portfolio__item" href="Cappadocia/index.html">
+                    <img class="portfolio__item-img" src="img/works/capadocia.jpg" alt="capadocia">
+                </a>
+                <a class="portfolio__item horizonal-4" href="Cuba/index.html">
+                    <img class="portfolio__item-img" src="img/works/cuba.jpg" alt="cuba">
+                </a>
+                <a class="portfolio__item" href="Uber/dist/index.html">
+                    <img class="portfolio__item-img" src="img/works/uber.jpg" alt="uber">
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="price">
-        <div class="container">
+    <section class="price" id="price">
+        <div class="container animate__animated animate__fadeIn wow">
             <h3 class="title title--fz16 price__title">Прайс-лист</h3>
             <div class="price__wrapper">
                 <div class="price__item">
@@ -395,8 +407,8 @@
         </div>
     </section>
 
-    <section class="contacts">
-        <div class="container">
+    <section class="contacts" id="contacts">
+        <div class="container animate__animated animate__fadeIn wow">
             <div class="contacts__wrapper">
                 <div class="contacts__img">
                     <img src="img/main_photo.jpg" alt="photo">
@@ -448,7 +460,7 @@
             </div>
         </div>
     </section> 
-
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
