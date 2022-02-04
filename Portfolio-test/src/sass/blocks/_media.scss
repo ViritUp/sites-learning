@@ -52,12 +52,16 @@
             justify-content: space-around;
             row-gap: 35px;
             .vertical{
-                grid-row: unset;
-                grid-column: unset;
+                &-1, &-2{
+                    grid-row: unset;
+                    grid-column: unset;
+                }
             }
             .horizonal{
-                grid-row: unset;
-                grid-column: unset;
+                &-1, &-2, &-3, &-4{
+                    grid-row: unset;
+                    grid-column: unset;
+                }
             }
         }
         &__subtitle{
