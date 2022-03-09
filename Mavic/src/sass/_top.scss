@@ -1,0 +1,47 @@
+.top{
+    background: url('../img/top-bg.jpg') center center/cover no-repeat;
+    min-height: 100vh;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
+        opacity: 0.4;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: flex-end;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__title{
+        font-family: 'SFProDisplay', sans-serif;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 115px;
+        margin-bottom: 25px;
+    }
+    &__text{
+        margin: 25px 0 35px;
+        max-width: 325px;
+    }
+    &__social-item{
+        display: inline-block;
+        margin: 0 25px;
+    }
+    &__social-link{
+        opacity: .5;
+        transition: all .3s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

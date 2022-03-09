@@ -1,0 +1,58 @@
+.questions{
+    &__items{
+        max-width: 757px;
+        padding-bottom: 15px;
+    }
+    &__item{
+        background: rgba(0, 0, 0, 0.3);
+        max-width: 690px;
+        margin: 5px 0;
+        &:nth-child(3) .questions__item-title {
+            position: relative;
+            &::before{
+                content: url('../img/questions-bg.png');
+                position: absolute;
+                width: 319px;
+                height: 125px;  
+                right: -391px;
+                bottom: -23px;
+            }
+        }
+    }
+    &__item.questions__item--active{ 
+        .questions__item-text{
+            display: block;
+        }
+        .questions__item-title::after{
+            transform: rotate(180deg);
+        }
+    }
+    &__item-title{
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 28px;
+        color:rgba(255, 255, 255, 0.8);
+        padding: 20px 10px 24px 40px;
+        position: relative;
+        cursor: pointer;
+        
+        &::after{
+            content: url('../img/acardion-arrow.svg');
+            position: absolute;
+            width: 72px;
+            height: 70px;
+            background: #fff;
+            top: 1px;
+            right: -72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__item-text{
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0 5px 75px 50px;
+        display: none;
+    }
+}

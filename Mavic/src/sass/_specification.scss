@@ -1,0 +1,67 @@
+.specification{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    &__item-center{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__box{
+        width: 280px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: 5;
+        }
+    }
+    &__box-2{
+        margin-top: 140px;
+    }
+    &__box-4{
+        margin-top: 160px;
+    }
+    &__box-1::before{
+        background: url('../img/poiner-1.svg') center center/cover no-repeat;
+        width: 242px;
+        height: 121px;
+        right: -133px;
+        top: 14px;
+    }
+    &__box-2::before{
+        background: url('../img/poiner-2.svg') center center/cover no-repeat;
+        width: 382px;
+        height: 90px;
+        right: -319px;
+        top: -75px;
+    }
+    &__box-3::before{
+        background: url('../img/poiner-3.svg') center center/cover no-repeat;
+        width: 267px;
+        height: 107px;
+        left: -283px;
+        top: 13px;
+    }
+    &__box-4::before{
+        background: url('../img/poiner-4.svg') center center/cover no-repeat;
+        width: 124px;
+        height: 90px;
+        left: -139px;
+        top: -75px;
+    }
+
+    &__box-title{
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    &__box-text{
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
