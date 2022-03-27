@@ -1,0 +1,114 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+body{
+    min-width: 320px;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    background-color: #171919;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.headline-left{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.title{
+    span{
+        font-weight: 800;
+        font-size: 200px;
+        text-transform: uppercase;
+        color: rgba(#fff, 0.02);
+        position: relative;
+        transform: translateX(-50px);
+        display: inline-block;
+    }
+    h3 {
+        color: #fff;
+        font-size: 80px;
+        position: absolute;
+        top: 0;
+        right: -15px;
+        &::after {
+            content: '';
+            top: 0;
+            right: 0;
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            background-color: var(--main-color);
+        }
+    }
+}
+
+.subtitle{
+    display: inline-block;
+    text-align: right;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        text-transform: uppercase;
+        padding-right: 10px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
+
+
+
+
+@import "header/header";
+@import "serf/serf";
