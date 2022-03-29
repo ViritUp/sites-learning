@@ -106,9 +106,42 @@ body{
     }
 }
 
+.btn {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    span {
+        padding: 17px 57px 15px 17px;
+        background-color: var(--main-color);
+        display: inline-block;
+        margin-left: 15px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url('../img/header/arrows-right.svg');
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
 
 
 
 
 @import "header/header";
-@import "serf/serf";
+@import "surf/surf";

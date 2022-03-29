@@ -1,0 +1,254 @@
+.surf{
+    padding: 160px 0 120px;
+    background: url('../img/surf/bg.svg') top 11% right/auto no-repeat;
+    &__subtitle{
+        text-align: right;
+        padding-right: 80px;
+        margin-top: -86px;
+    }
+    &__slider {
+        padding-top: 110px;
+        .slider-arrows {
+            top: 50px;
+            opacity: .25;
+            transition: all .4s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .slick-slide{
+            
+            &:nth-child(4n + 1){
+                .surf-box{
+                    margin-top: 32px;
+                }
+            }
+            &:nth-child(4n + 3){
+                .surf-box{
+                    margin-top: 89px;
+                }
+            }
+            &:hover{
+                .surf-box__inner {
+                    background-color: rgba(#1c2121, .3);
+                }
+            }
+        }
+        .slick-current {
+            .surf-box__inner-btn {
+                display: block;
+            }
+            .surf-box__inner {
+                background-color: rgba(#1c2121, .3);
+            }
+        }
+        
+    }
+}
+
+.surf-box {
+    position: relative;
+    width: calc(100% + 40px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__inner {
+        min-height: 750px;
+        background-color: rgba(#1c2121, .85);
+        position: relative;
+        transition: all .4s;
+        &-title{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 36px;
+            text-transform: uppercase;
+            padding: 72px 0 0 40px;
+            width: 140px;
+        }
+        &-location{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            position: absolute;
+            left: 40px;
+            bottom: 80px;
+            white-space: nowrap;
+            width: 0;
+            height: 0;
+            span {
+                font-weight: 100;
+            }
+        }
+        &-btn{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            display: none;
+        }
+    }
+}
+
+
+.surf-map{
+    max-width: 100%;
+    min-height: 735px;
+    background: url('../img/surf/world-map.png') center center/auto no-repeat;
+    position: relative;
+    &::before{
+        content: '34.0501○ N -118.2446○ W';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        position: absolute;
+        transform: rotate(-90deg);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: rgba(#fff, .5);
+    }
+    .slick-list {
+        min-height: 735px;
+    }
+    .slick-current {
+        .map-dots__content {
+            display: block;
+        }
+    }
+}
+
+.map-dots{
+    position: relative;
+    &--1{
+        top: 380px;
+        left: 340px;
+    }
+    &--2{
+        top: 341px;
+        left: 250px;
+        .map-dots__circle{
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('../img/surf/mark.svg') center center/cover no-repeat;
+                width: 14px;
+                height: 17px;
+                top: -25px;
+                left: 25px;
+            }
+        }
+    }
+    &--3{
+        top: 369px;
+        left: 210px;
+    }
+    &--4{
+        top: 551px;
+        left: 49px;
+    }
+    &--5{
+        top: 263px;
+        left: -69px;
+    }
+    &--6{
+        top: 608px;
+        left: -197px;
+    }
+    &--7{
+        top: 435px;
+        left: -279px;
+    }
+    &--8{
+        top: 555px;
+        left: -227px;
+    }
+
+    &__circle{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
+        cursor: pointer;
+    }
+    &__content{
+        display: none;
+        width: 285px;
+        padding: 28px 31px 0 32px;
+        border-radius: 6px;
+        background-color: rgba(#0F1010, .7);
+        z-index: 10;
+        position: absolute;
+        bottom: 45px;
+        right: 35%;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom: 15px solid var(--main-color);
+            bottom: -27px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+        &-title{
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 26px;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: var(--main-color);
+                width: 80px;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &-subtitle{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &-link{
+            padding-top: 6px;
+        }
+        &-item{
+            text-align: center;
+            img {
+                margin: 0 auto;
+                margin-bottom: 7px;
+            }
+        }
+        &-number {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 23px;
+        }
+        &-name{
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            text-transform: uppercase;
+        }
+    }
+    
+}
