@@ -64,6 +64,28 @@ body{
     }
 }
 
+.headline-right{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-right: 103px;
+    position: relative;
+    display: inline-block;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .title{
     span{
         font-weight: 800;
@@ -99,7 +121,18 @@ body{
         font-weight: 800;
         font-size: 40px;
         text-transform: uppercase;
-        padding-right: 10px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
+.descr{
+    display: inline-block;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        text-transform: uppercase;
         span {
             font-weight: 100;
         }
@@ -139,9 +172,55 @@ body{
     }
 }
 
+.stars-rating__wrapper{
+    position: relative;
+    display: inline-block;
+    margin-top: -12px;
+    margin-left: 25px;
+    &:before{
+        content: '\f005  \f005  \f005  \f005  \f005';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 22px;
+        font-weight: 200;
+        color: var(--main-color);
+    }
+    
+}
+
+.stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    &::before{
+        content: '\f005  \f005  \f005  \f005  \f005';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 22px;
+        color: var(--main-color);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        height: 3px;
+        background-color: rgba(74, 246, 206, 0.13);
+        border-radius: 20px;
+        width: 80%;
+        box-shadow: 0px 0px 15px rgb(74, 246, 206);
+    }
+}
+
 
 
 
 
 @import "header/header";
 @import "surf/surf";
+@import "travel/travel";
+@import "sleep/sleep";
+@import "shop/shop";
+@import "footer/footer";

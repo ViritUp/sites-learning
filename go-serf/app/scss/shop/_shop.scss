@@ -1,0 +1,181 @@
+.shop {
+    background: url('../img/shop/shop-bg.png') center right/auto no-repeat;
+    padding-top: 80px;
+    &__title{
+        right: 15px;
+    }
+    &__slider {
+        padding-left: 132px;
+        margin-top: -60px;
+        .slider-arrows {
+            opacity: .25;
+            transition: all .4s;
+            top: -40px;
+            &:hover {
+                opacity: 1;
+            } 
+        }
+    }
+    .stars-rating__wrapper{
+        margin: 0;
+        margin-bottom: 9px;
+    }
+}
+
+.shop-slider{
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__info{
+        max-width: 480px;
+        margin-right: 40px;
+        width: 100%;
+    }
+    &__descr{
+        max-width: 380px;
+        margin-bottom: 65px;
+        .descr{
+            margin-bottom: 47px;
+        }
+    }
+    &__price-num{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        sup {
+            font-size: 18px;
+            margin-left: 5px;
+            top: -0.75em;
+        }
+    }
+
+
+    &__content{
+        padding-left: 180px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__extras{
+        padding-left: 150px;
+        &-title{
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 40px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        &-inner{
+            display: flex;
+            align-items: flex-end;
+        }
+        &-box{
+            text-align: center;
+            margin-right: 55px;
+            img {
+                margin-bottom: 35px;
+            }
+        }
+        &-name{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: rgba(#fff, .5);
+            margin-bottom: 16px;
+        }
+        &-price {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.surfboard{
+    position: relative;
+    &-box {
+        position: absolute;
+        &--first{
+            right: 40px;
+            top: 215px;
+        }
+        &--second{
+            top: 300px;
+            left: -5px;
+        }
+        &--third{
+            bottom: 70px;
+            left: 52px;
+            .surfboard-box__content{
+                left: -400px;
+                padding-left: 0px;
+                padding-right: 104px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 80px;
+                    height: 1px;
+                    background-color: rgba(#fff, .5);
+                    left: auto;
+                    right: 0;
+                    top: 50%;
+                }
+            }
+        }
+        
+        &__circle{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: relative;
+            background-color: #fff;
+            cursor: pointer;
+            &.active{
+                .circle-row + .circle-row{
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+                & + .surfboard-box__content {
+                    display: block;
+                }
+            }
+        }
+        &__content{
+            display: none;
+            position: absolute;
+            width: 360px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: uppercase;
+            padding-left: 104px;
+            top: -15px;
+            left: 40px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 1px;
+                background-color: rgba(#fff, .5);
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+    .circle-row{
+        background-color: var(--main-color);
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        & + .circle-row {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+}

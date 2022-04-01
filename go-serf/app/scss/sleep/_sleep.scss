@@ -1,0 +1,112 @@
+.sleep {
+    padding: 20px 0 260px;
+    background: url('../img/sleep/flover.png') bottom 7% right -8%/auto no-repeat;
+    &__title{
+        h3{
+            right: 46px;
+        }
+    }
+    &__slider{
+        .slider-arrows {
+            opacity: .25;
+            transition: all .4s;
+            top: 200px;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.sleep-slider{
+    &__head{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top left;
+        min-height: 780px;
+        margin-top: -35px;
+    }
+    &__subtitle{
+        text-align: right;
+        padding-right: 80px;
+        padding-top: 132px;
+    }
+    &__descr{
+        margin-top: -280px;
+        min-height: 400px;
+        padding-top: 200px;
+        padding-left: 132px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top right -6%;
+        .descr__head{
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+    &__btn {
+        text-align: center;
+    }
+    &__calc{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        &-item{
+            position: relative;
+            min-height: 200px;
+            margin: 0 75px 66px;
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: rgba(#fff, .5);
+            transform: rotate(-90deg);
+            position: absolute;
+            white-space: nowrap;
+            text-align: right;
+            bottom: 102px;
+            left: -105px;
+            width: 200px;
+            height: 0;
+        }
+        &-title{
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 36px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            max-width: 260px;
+            padding-left: 40px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            text-align: right;
+            letter-spacing: 5.25px;
+            text-transform: uppercase;
+            color: rgba(#fff, .75);
+        }
+        &-btns {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .sleep-slider__calc-minus,
+            .sleep-slider__calc-plus{
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                margin: 0;
+                color: var(--main-color);
+                font-size: 46px;
+                cursor: pointer;
+                margin: 0 6px;
+            }
+            
+        }
+    }
+}

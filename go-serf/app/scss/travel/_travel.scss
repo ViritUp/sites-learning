@@ -1,0 +1,94 @@
+.travel{
+    padding: 160px 0 280px;
+    background: url('../img/travel/cocktail.png') bottom right -8%/auto no-repeat;
+    &__title{
+        h3{
+            right: 112px;
+        }
+    }
+    &__slider{
+        .slider-arrows {
+            opacity: .25;
+            transition: all .4s;
+            top: 200px;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.travel-slider{
+    &__head{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top left;
+        min-height: 780px;
+        margin-top: -35px;
+    }
+    &__descr{
+        margin-top: -280px;
+        min-height: 400px;
+        padding-top: 200px;
+        padding-left: 132px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top right 15%;
+        img{
+            padding-left: 20px;
+            display: inline-block;
+        }
+    }
+    &__subtitle{
+        text-align: right;
+        padding-right: 80px;
+        padding-top: 132px;
+    }
+    &__btn {
+        text-align: center;
+    }
+    &__info{
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        &-item{
+            position: relative;
+            min-height: 200px;
+            margin: 0 75px 66px;
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: rgba(#fff, .5);
+            transform: rotate(-90deg);
+            position: absolute;
+            white-space: nowrap;
+            text-align: right;
+            bottom: 102px;
+            left: -105px;
+            width: 200px;
+            height: 0;
+        }
+        &-title{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 36px;
+            text-transform: uppercase;
+            max-width: 245px;
+            padding-left: 40px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            text-align: right;
+            letter-spacing: 5.25px;
+            text-transform: uppercase;
+            color: rgba(#fff, .75);
+        }
+    }
+}
