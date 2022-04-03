@@ -1,0 +1,193 @@
+@media (max-width: 1600px) {
+    .sleep-slider__descr{
+        background-position: top right -10%;
+    }
+    .sleep-slider__calc-item {
+        margin: 0 30px 30px;
+    }
+}
+
+@media (max-width: 1241px) {
+    .sleep {
+        padding: 15px 0 180px;
+        background: url(../img/sleep/flover.png) bottom 3% right -9%/28% no-repeat;
+    }
+    .sleep-slider__descr{
+        padding-left: 40px;
+        background-position: top 0px right -14%;
+        min-height: 370px;
+    }
+    .sleep-slider__subtitle{
+        padding-right: 40px;
+    }
+    .sleep-slider__calc-title{
+        font-size: 30px;
+        line-height: 32px;
+        padding-left: 25px;
+    }
+    .sleep-slider__calc-item{
+        margin: 0 15px 30px;
+        min-width: 200px;
+    }
+    .sleep-slider__calc-subtitle{
+        font-size: 16px;
+    }
+}
+
+/* 
+@media (max-width: 971px){
+    .sleep-slider__descr{
+        background-size: 65%;
+    }
+    .sleep-slider__info{
+        flex-wrap: wrap;
+    }
+    .sleep-slider__info-item{
+        flex: 1 0 38%;
+        margin: 0 30px 30px;
+    }
+    .sleep-slider__info-title{
+        padding-left: 40px;
+    }
+    .sleep-slider__info-text{
+        text-align: left;
+        padding-left: 40px;
+    }
+} */
+
+/* @media (max-width: 900px){
+    .sleep{
+        padding: 80px 0 100px;
+    }
+} */
+
+/* @media (max-width: 600px){
+    .sleep-slider__subtitle{
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+    .sleep-slider__head {
+        background-size: 125%;
+    }
+    .sleep-slider__descr {
+        padding-top: 80px;
+        padding-left: 20px;
+        min-height: 230px;
+        background-position: top -80px right -26%;
+        margin-top: -400px;
+    }
+    .headline-right {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .descr__head{
+        font-size: 36px;
+        margin-top: -12px;
+    }
+    .sleep {
+        background: url('../img/sleep/flover.png') bottom 1% right -20%/45% no-repeat;
+    }
+    .sleep-slider__info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sleep-slider__info-item{
+        min-width: 245px;
+        margin: 0 30px 0;
+        &:nth-child(2) {
+            min-height: 150px;
+            .sleep-slider__info-subtitle{
+                bottom: 55px;
+            }
+        }
+        &:nth-child(4) {
+            min-height: 150px;
+            .sleep-slider__info-subtitle{
+                bottom: 55px;
+            }
+        }
+    }
+    .sleep-slider__info-title {
+        padding-left: 30px;
+    }
+    .sleep-slider__info-subtitle {
+        font-size: 12px;
+    }
+    .sleep__title span{
+        font-size: 120px;
+    }
+    .sleep__title h3{
+        right: 45px;
+    }
+    .sleep-slider__btn{
+        .btn{
+            font-size: 32px;
+            span {
+                padding: 10px 47px 10px 15px;
+                &::after{
+                    right: 12px;
+                }
+            }
+        }
+    }
+    .sleep-slider__descr {
+        padding-top: 115px;
+        margin-top: -500px;
+        background-position: top -10px right -37%;
+    }
+    .sleep__slider .slider-arrows{
+        top: 100px;
+    }
+    .sleep-slider__subtitle .subtitle__head {
+        font-size: 32px;
+    }
+} */
+
+
+/* 
+@media (max-width: 426px) {
+    .sleep {
+        background: url('../img/sleep/flover.png') bottom 10% right -34%/60% no-repeat;
+        padding: 60px 0 60px;
+    }
+    .sleep__title span {
+        font-size: 90px;
+    }
+    .sleep-slider__head {
+        min-height: 665px;
+        margin-top: -10px;
+    }
+    .sleep-slider__subtitle .subtitle__head{
+        font-size: 24px;
+    }
+    .descr__head {
+        font-size: 26px;
+        margin-top: -20px;
+    }
+    .sleep-slider__subtitle{
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+    .sleep-slider__subtitle .headline-left {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .sleep-slider__descr{
+        padding-left: 10px;
+        min-height: 210px;
+    }
+    .headline-right{
+        padding-right: 60px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .headline-right::before{
+        width: 50px;
+    }
+    .sleep-slider__descr img{
+        padding-left: 10px;
+    }
+    .sleep-slider__info-title{
+        max-width: 185px;
+    }
+} */

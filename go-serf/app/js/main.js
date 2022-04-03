@@ -15,6 +15,11 @@ $(function(){
         asNavFor: '.header__slider',
     });
 
+    $('.menu-btn').on('click', function() {
+        $('.menu').toggleClass('active');
+        $('.menu-btn').toggleClass('active-btn');
+    });
+
 
     /*------------------- SURF-MAP ------------------- */
     $('.surf-map').slick({
@@ -37,6 +42,26 @@ $(function(){
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/header/arrows-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/header/arrows-right.svg" alt="">',
         asNavFor: '.surf-map',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
 

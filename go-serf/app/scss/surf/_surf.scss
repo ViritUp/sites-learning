@@ -49,9 +49,11 @@
 .surf-box {
     position: relative;
     width: calc(100% + 40px) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    &__wrapper{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
     &__inner {
         min-height: 750px;
         background-color: rgba(#1c2121, .85);

@@ -105,6 +105,25 @@
     text-align: center;
 }
 
+.menu-btn{
+    position: absolute;
+    top: 0;
+    left: 363px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    padding: 10px;
+    background-color: rgba(#000, .3);
+    z-index: 20;
+    user-select: none;
+    cursor: pointer;
+    display: none;
+    transition: .4s ease-in-out;
+    &.active-btn{
+        background-color: rgba(#4AF6CD, .3);
+        left: 364px;
+    }
+}
+
 .menu{
     padding-top: 35px;
     &__list-link{
