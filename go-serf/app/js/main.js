@@ -1,5 +1,6 @@
-$(function(){
 
+$(function(){
+    
     /*------------------- HEADER-SLIDER ------------------- */
     $('.header__slider').slick({
         infinite: true,
@@ -191,6 +192,36 @@ $(function(){
         $(this).toggleClass('active');
     });
 
+    
+
+    /*------------------- TIME ------------------- */
+   
+    
+
+    const dateEl = document.querySelector('.header__date');    //внутри спан с месяцем / годом
+
+    const day = new Date().getDate();
+    const month = new Date().getMonth() + 1;
+    const year = new Date().getFullYear();
+    console.log(day, month, year);
+    setDate();
+
+    
+    function addZero(num) {
+        if(num < 10) {
+            return `0${num}`;
+        } else {
+            return num;
+        }
+    }
+
+    function setDate() {
+        dateEl.innerHTML = `
+            ${addZero(day)}
+            <span>${addZero(month)} | ${year}</span>
+        `;
+    }
+    
   
 });
 
